@@ -51,7 +51,7 @@ export default defineConfig({
 
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/你的用户名' }
+      { icon: 'github', link: 'https://github.com/nlindashuaibi' }
     ]
   }
 })
