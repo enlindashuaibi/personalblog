@@ -4,7 +4,7 @@ export default defineConfig({
   title: "我的技术博客",
   description: "分享技术文档和学习心得",
   lang: 'zh-CN',
-  
+  base: '/personalblog/',
   // 网站头部导航栏
   themeConfig: {
     logo: '/logo.png',
