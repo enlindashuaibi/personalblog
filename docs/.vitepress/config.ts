@@ -25,7 +25,7 @@ export default defineConfig({
     sidebar: {
       '/articles/frontend/': [
         {
-          text: '前端开发',
+          text: '前端',
           items: [
             { text: '前端概述', link: '/articles/frontend/' }
           ]
@@ -33,7 +33,7 @@ export default defineConfig({
       ],
       '/articles/backend/': [
         {
-          text: '后端开发',
+          text: '后端',
           items: [
             { text: '后端概述', link: '/articles/backend/' }
           ]
@@ -41,17 +41,15 @@ export default defineConfig({
       ],
       '/articles/devops/': [
         {
-          text: '运维部署',
+          text: '运维',
           items: [
-            { text: '运维概述', link: '/articles/devops/' }
+            { text: '概述', link: '/articles/devops/' },
+            { text: '一次因为阿里云的变更导致的故障', link: '/articles/devops/anquanzubiangen' },
+            { text: '如何安装nvidia-docker', link: '/articles/devops/installnvidiadocker' },
+            { text: '更新中请期待', link: '/articles/devops/wait' }
           ]
         }
       ]
-    },
-
-    // 社交链接
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/nlindashuaibi' }
-    ]
+    }
   }
 })

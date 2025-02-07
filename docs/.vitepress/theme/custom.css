@@ -1,0 +1,5 @@
+.custom-pagination .vp-pagination .prev, 
+.custom-pagination .vp-pagination .next {
+  font-size: 1.8em; /* 调整字体大小 */
+  padding: 0.5em 1em; /* 调整内边距 */
+}
