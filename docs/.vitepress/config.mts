@@ -2,8 +2,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "我的技术博客",
-  description: "分享技术文档和学习心得",
+  title: "恩霖大帅逼的技术博客",
+  description: "日常记录，偶尔更新",
   lang: 'zh-CN',
   base: '/personalblog/',
   // 网站头部导航栏
@@ -14,9 +14,9 @@ export default defineConfig({
       { 
         text: '技术分类', 
         items: [
-          { text: '前端开发', link: '/articles/frontend/' },
-          { text: '后端开发', link: '/articles/backend/' },
-          { text: '运维部署', link: '/articles/devops/' }
+          { text: '面试分享', link: '/articles/interview/' },
+          { text: '运维知识', link: '/articles/devops/' },
+          { text: '故障复盘', link: '/articles/troubleshooting/' }
         ]
       },
       { text: '关于', link: '/about' }
@@ -24,29 +24,29 @@ export default defineConfig({
     
     // 侧边栏
     sidebar: {
-      '/articles/frontend/': [
+      '/articles/interview/': [
         {
-          text: '前端开发',
+          text: '面试分享',
           items: [
-            { text: '分类导航', link: '/articles/frontend/' }
-          ]
-        }
-      ],
-      '/articles/backend/': [
-        {
-          text: '后端开发',
-          collapsed: false,
-          items: [
-            { text: '分类导航', link: '/articles/backend/' }
+            { text: '分类导航', link: '/articles/interview/' }
           ]
         }
       ],
       '/articles/devops/': [
         {
-          text: '运维部署',
+          text: '运维知识',
           collapsed: false,
           items: [
             { text: '分类导航', link: '/articles/devops/' }
+          ]
+        }
+      ],
+      '/articles/troubleshooting/': [
+        {
+          text: '故障复盘',
+          collapsed: false,
+          items: [
+            { text: '分类导航', link: '/articles/troubleshooting/' }
           ]
         }
       ]

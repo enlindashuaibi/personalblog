@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "我的技术博客",
-  description: "分享技术文档和学习心得",
+  title: "恩霖大帅逼",
+  description: "日常记录，偶尔更新",
   lang: 'zh-CN',
   base: '/personalblog/',
   // 网站头部导航栏
@@ -13,9 +13,9 @@ export default defineConfig({
       { 
         text: '技术分类', 
         items: [
-          { text: '前端开发', link: '/articles/frontend/' },
-          { text: '后端开发', link: '/articles/backend/' },
-          { text: '运维部署', link: '/articles/devops/' }
+          { text: '面试分享', link: '/articles/interview/' },
+          { text: '运维知识', link: '/articles/devops/' },
+          { text: '故障复盘', link: '/articles/troubleshooting/' }
         ]
       },
       { text: '关于', link: '/about' }
@@ -23,30 +23,34 @@ export default defineConfig({
     
     // 侧边栏
     sidebar: {
-      '/articles/frontend/': [
+      '/articles/interview/': [
         {
-          text: '前端',
+          text: '面试分享',
           items: [
-            { text: '前端概述', link: '/articles/frontend/' }
-          ]
-        }
-      ],
-      '/articles/backend/': [
-        {
-          text: '后端',
-          items: [
-            { text: '后端概述', link: '/articles/backend/' }
+            { text: '面试分享', link: '/articles/interview/' },
+            { text: 'calico和flannel的区别', link: '/articles/interview/calico2flannel' },
+            { text: 'Istio', link: '/articles/interview/Istio' },
+            { text: '更新中请期待', link: '/articles/interview/wait' }
           ]
         }
       ],
       '/articles/devops/': [
         {
-          text: '运维',
+          text: '运维知识',
           items: [
-            { text: '概述', link: '/articles/devops/' },
-            { text: '一次因为阿里云的变更导致的故障', link: '/articles/devops/anquanzubiangen' },
-            { text: '如何安装nvidia-docker', link: '/articles/devops/installnvidiadocker' },
+            { text: '运维知识', link: '/articles/devops/' },
             { text: '更新中请期待', link: '/articles/devops/wait' }
+          ]
+        }
+      ],
+      '/articles/troubleshooting/': [
+        {
+          text: '故障复盘',
+          items: [
+            { text: '概述', link: '/articles/troubleshooting/' },
+            { text: '一次因为阿里云的变更导致的故障', link: '/articles/troubleshooting/anquanzubiangen' },
+            { text: '如何安装nvidia-docker', link: '/articles/troubleshooting/installnvidiadocker' },
+            { text: '更新中请期待', link: '/articles/troubleshooting/wait' }
           ]
         }
       ]
