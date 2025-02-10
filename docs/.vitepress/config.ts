@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "恩霖大帅逼",
+  title: "恩霖",
   description: "日常记录，偶尔更新",
   lang: 'zh-CN',
   base: '/personalblog/',
@@ -14,7 +14,7 @@ export default defineConfig({
         text: '技术分类', 
         items: [
           { text: '面试分享', link: '/articles/interview/' },
-          { text: '运维知识', link: '/articles/devops/' },
+          { text: '运维知识/方案分享', link: '/articles/devops/' },
           { text: '故障复盘', link: '/articles/troubleshooting/' }
         ]
       },
@@ -27,18 +27,19 @@ export default defineConfig({
         {
           text: '面试分享',
           items: [
-            { text: '面试分享', link: '/articles/interview/' },
             { text: 'calico和flannel的区别', link: '/articles/interview/calico2flannel' },
             { text: 'Istio', link: '/articles/interview/Istio' },
+            { text: 'k8s中apiversion类型', link: '/articles/interview/k8sapiversion' },
+            { text: 'k8s中pod的类型', link: '/articles/interview/k8spodtype' },
             { text: '更新中请期待', link: '/articles/interview/wait' }
           ]
         }
       ],
       '/articles/devops/': [
         {
-          text: '运维知识',
+          text: '运维知识/方案分享',
           items: [
-            { text: '运维知识', link: '/articles/devops/' },
+            { text: '阿里云SLS费用优化方案', link: '/articles/devops/slssavecost' },
             { text: '更新中请期待', link: '/articles/devops/wait' }
           ]
         }
@@ -47,7 +48,6 @@ export default defineConfig({
         {
           text: '故障复盘',
           items: [
-            { text: '概述', link: '/articles/troubleshooting/' },
             { text: '一次因为阿里云的变更导致的故障', link: '/articles/troubleshooting/anquanzubiangen' },
             { text: '如何安装nvidia-docker', link: '/articles/troubleshooting/installnvidiadocker' },
             { text: '更新中请期待', link: '/articles/troubleshooting/wait' }

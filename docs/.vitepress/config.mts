@@ -2,7 +2,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "恩霖大帅逼的技术博客",
+  title: "恩霖的技术博客",
   description: "日常记录，偶尔更新",
   lang: 'zh-CN',
   base: '/personalblog/',
@@ -34,7 +34,7 @@ export default defineConfig({
       ],
       '/articles/devops/': [
         {
-          text: '运维知识',
+          text: '运维知识/方案分享',
           collapsed: false,
           items: [
             { text: '分类导航', link: '/articles/devops/' }
