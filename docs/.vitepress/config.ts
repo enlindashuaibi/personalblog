@@ -31,6 +31,8 @@ export default defineConfig({
             { text: 'Istio', link: '/articles/interview/Istio' },
             { text: 'k8s中apiversion类型', link: '/articles/interview/k8sapiversion' },
             { text: 'k8s中pod的类型', link: '/articles/interview/k8spodtype' },
+            { text: 'bootfs和rootfs的区别', link: '/articles/interview/bootfs2rootfs' },
+            { text: '为什么的老的操作系统可以运行新操作系统的镜像', link: '/articles/interview/whycanrun' },
             { text: '更新中请期待', link: '/articles/interview/wait' }
           ]
         }
@@ -49,7 +51,6 @@ export default defineConfig({
           text: '故障复盘',
           items: [
             { text: '一次因为阿里云的变更导致的故障', link: '/articles/troubleshooting/anquanzubiangen' },
-            { text: '如何安装nvidia-docker', link: '/articles/troubleshooting/installnvidiadocker' },
             { text: '更新中请期待', link: '/articles/troubleshooting/wait' }
           ]
         }
